@@ -1,0 +1,12 @@
+#Program to sort
+lis = []
+for i in range (0,4):
+    n=int(input())
+    lis.append(n)
+for i in range (0,4):
+    for j in range (i+1,4):
+        if lis[i]<lis[j]:
+            temp = lis[i]
+            lis[i]=lis[j]
+            lis[j]=temp
+print(*lis,sep=" > ")
